@@ -1,0 +1,62 @@
+
+
+
+
+
+<link rel="stylesheet" href="css/campschedule.css">
+<div class="Camp">
+    <h1>Join our campaigns</h1>
+    <div class="showCamp" id="display">
+        {{#each camp}}
+        <div class="card">
+                <h6>Camp Name: <strong>{{this.name}}</strong></h6>
+                <p>Place:{{this.address}} Time:{{this.time}}</p>
+                <p>Date:{{this.date}}</p>
+                <a href="/Enroll/{{this.date}}/{{this.address}}/{{this.name}}"class="btn">Enroll</a>
+            </div>
+        {{/each}}
+    </div>
+</div>
+
+
+{{!-- 
+<script>
+    let campaign = {
+        location: [
+            'Manglore,PA College of Engineer',
+            'Banglore,HBS Hospital',
+            'volachil,Srinivas college of Enginnering',
+            'Surathkal,NITK college',
+            'Karkala,NITTE Enginnering Collge'
+        ],
+        date: [
+            '28/012/2021',
+            '15/11/2021',
+            '20/09/2021',
+            '04/09/2021',
+            '17/08/2021'
+
+        ],
+        status: [
+            'Enroll',
+            'Enroll',
+            'Enroll',
+            'Enroll',
+            'Enroll'
+        ]
+    }
+    console.log(campaign.location[0]);
+    let i = 0;
+    let campList = document.getElementById('display');
+    campList.innerHTML = '';
+    for (; i < 5; i++) {
+        campList.innerHTML += `
+            <div class="card">
+                <h4>Place:${campaign.location[i]}</h4>
+                <p>Date:${campaign.date[i]} Time: 8:00AM-5:00PM</p>
+                <a href="/Enroll"class="btn">${campaign.status[i]}</a>
+            </div>
+            `;
+    }
+
+</script> --}}

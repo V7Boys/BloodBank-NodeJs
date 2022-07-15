@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1215px) {
+    .learnImage img {
+        width: 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .carousel-item .sliderImg {
+        height: 15em;
+    }
+}
+
+#logo {
+    width: auto;
+    height: 5em;
+    margin-left: 5em;
+}
+
+.navList {
+    justify-content: safe;
+}
+
+.nav-item {
+    margin-left: 10%;
+}
+
+.sliderImg {
+    height: 38em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* about us style */
+
+.aboutusContainer {
+    margin-top: 3%;
+}
+
+.aboutusContainer h1 {
+    text-align: center;
+}
+
+.aboutus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.aboutus p {
+    width: auto;
+    font-size: 1.8em;
+    justify-self: center;
+    align-self: center;
+    margin: 1em;
+}
+
+.aboutus img {
+    /* width: 50%; */
+    border-radius: 35px;
+    border: 4px dashed red;
+    padding: 4px;
+    width: 450px;
+}
+
+#donateBlood {
+    background-color: red;
+    padding: 0px 15px;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+}
+
+.aboutusCard {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em 0em;
+}
+
+.card {
+    text-align: center;
+    margin: 0 1em;
+}
+
+.card h5 {
+    margin-top: 3px;
+}
+
+.card i {
+    font-size: 10em;
+    text-align: center;
+    color: red;
+    margin-top: 2px;
+}
+
+.btn-color {
+    background-color: red;
+    color: white;
+}
+
+
+/* learn about donation */
+
+.learnDonation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* our campaign */
+
+.campaign {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.carousel-cell {
+    width: 28%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+    background: #ED2;
+}
+
+
+/* cell number */
+
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+.Awards {
+    text-align: center;
+    margin-top: 2%;
+}

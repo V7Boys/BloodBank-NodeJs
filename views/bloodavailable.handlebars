@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="css/bloodavailable.css">
+<h1 id="head">Stock Availability</h1>
+
+<div class="tab">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Blood Banks</th>
+                <th scope="col">State</th>
+                <th scope="col">District</th>
+                <th scope="col">Category</th>
+                <th scope="col">Address</th>
+                <th scope="col">Available</th>
+
+            </tr>
+        </thead>
+        <tbody id="addTable">
+            {{#each data }}
+            <tr>
+                <th scope="row">{{this.Hosp_id}}</th>
+                <td>{{this.Hosp_name}}</td>
+                <td>{{this.Hosp_state}}</td>
+                <td>{{this.Hosp_district}}</td>
+                <td>{{this.Hosp_category}}</td>
+                <td>
+                    {{this.Hosp_address}}
+                  
+                </td>
+                <td>{{this.availableBlood}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

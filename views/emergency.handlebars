@@ -1,0 +1,45 @@
+
+
+
+<link rel="stylesheet" href="css/emergency.css">
+
+ <h1 id="head">choose your blood banks by searching </h1>
+    <div class="input">
+        <form class="d-flex" method="POST" action="/emergency">
+            <input class="form-control me-2" type="search" name ="state"placeholder="State..." aria-label="Search" id="inputval">
+            <input class="form-control me-2" type="search" name="district"placeholder="District..." aria-label="Search" id="inputval">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- <div id="result"> -->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Place</th>
+                    <th scope="col">Available</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">State</th>
+                    <th scope="col">District</th>
+                </tr>
+            </thead>
+            <tbody id="addTable">
+                {{#each Data }}
+                <tr>
+                    <th scope="row"></th>
+                    <td>{{this.name}}</td>
+                    <td>{{this.availabilty}}</td>
+                    <td>{{this.Address}}</td>
+                    <td>{{this.Phone}}</td>
+                    <td>{{this.categary}}</td>
+                    <td>{{this.Email}}</td>
+                    <td>{{this.state}}</td>
+                    <td>{{this.district}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>

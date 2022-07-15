@@ -1,0 +1,23 @@
+<style>
+    .conatiner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+
+<div class="conatiner">
+    <div class="card">
+        <div class="card-body">
+            {{#if success}}
+            <h1>Thank You {{data.name}} for donating Us</h1>
+            {{else}}
+            <h1>Thank you {{data.name}} for Enrolling for camp</h1>
+            {{/if}}
+            <p>We will send comformation to {{data.email}}</p>
+            <p>We will contact with your {{data.phone}} phone number</p>
+        </div>
+    </div>
+
+</div>

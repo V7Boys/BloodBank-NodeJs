@@ -1,0 +1,90 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .Enroll {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: blanchedalmond;
+     
+        justify-self: center;
+    }
+
+    .item {
+        margin: 5%;
+        font-size: 26px;
+    }
+ 
+   
+</style>
+
+
+{{!--
+<link rel="stylesheet" href="css/enroll.css"> --}}
+<h1>Enter your credential carefully</h1>
+<div class="Enroll">
+    <form action="/Enroll" method="POST">
+        <div class="item">
+            <label for="">Name*</label>
+            <input type="text" name="name" id="name" class="form-control">
+        </div>
+        <div class="item">
+            <label for="">Age*</label>
+            <input type="text" name="age" id="age" class="form-control">
+        </div>
+        <div class="item">
+            <label for="">Gender*</label>
+            <!-- <input type="text" name="" id="gender"> -->
+            <select name="gender" id="gender">
+                <option >Male</option>
+                <option >Female</option>
+            </select>
+        </div>
+        <div class="item">
+            <label for="">Phone number*</label>
+            <input type="text" name="phone" id="phno" class="form-control">
+        </div>
+        <div class="item">
+            <label for="">Email*</label>
+            <input type="text" name="email" id="email" class="form-control">
+        </div>
+        <div class="item">
+            <label for="">Blood Group*</label>
+            <!-- <input type="text" name="" id="bloodgroup"> -->
+            <select name="bloodgroup" id="bloodgroup">
+                <option>A+ve</option>
+                <option>A-ve</option>
+                <option>B+ve</option>
+                <option>B-ve</option>
+                <option>AB+ve</option>
+                <option>AB-ve</option>
+                <option>O+ve</option>
+                <option>O-ve</option>
+            </select>
+        </div>
+        <div class="item">
+            <label for="">Place*</label>
+            <input type="text" name="place" id="place" class="form-control" value="{{place}}">
+        </div>
+        <div class="item">
+            <label for="">camp name*</label>
+            <input type="text" name="campname" id="camp-name" class="form-control" value="{{campname}}">
+        </div>
+        <div class="item">
+            <label for="">Date*</label>
+            <input type="text" name="date" id="date" class="form-control" value="{{date}}">
+        </div>
+        <br>
+     
+            <input type="submit"  value="Submit" id="submit" class="btn btn-success">
+    </form>
+
+</div>

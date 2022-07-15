@@ -1,0 +1,7 @@
+.fail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eb727283;
+    width: 100%;
+}

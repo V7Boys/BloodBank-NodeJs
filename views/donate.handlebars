@@ -1,0 +1,49 @@
+
+
+
+
+<link rel="stylesheet" href="css/donate.css">
+<div class="navigation">
+    <i class="fa fa-tint"></i>
+    <div class="text">
+        <h1>Join Hands with us By contributing </h1>
+    </div>
+</div>
+<div class="payment">
+    <form action="/donate" method="POST">
+        <div class="formitems">
+            <label for="">Name*:</label>
+            <input type="text" name="name" id="name" class="form-control inputbox">
+        </div>
+        {{!-- <div class="formitems">
+            <label for="">Email*:</label>
+            <input type="text" name="email" id="email" class="form-control inputbox">
+        </div> --}}
+        <div class="formitems">
+            <label for="">Phone number*:</label>
+            <input type="text" name="phone" id="phno" class="form-control inputbox">
+        </div>
+
+        <div class="formitems">
+            <label for="">Enter Amount paid*:</label>
+            <input type="number" name="amount" id="amount" class="form-control inputbox">
+        </div>
+        <div class="formitems">
+            <label for="">Enter Transaction Id*:</label>
+            <input type="text" name="transaction-id" id="transaction-id" class="form-control inputbox">
+        </div>
+        {{!-- <div class="formitems">
+            <label for="">upload transaction screenshot*:</label>
+            <input type="file" name="picture" id="imageFile" accept="image/*" class="form-control inputbox">
+        </div> --}}
+        <div class="formitems">
+            <input type="submit" class="btn btn-success" value="Submit" id="submit">
+        </div>
+
+    </form>
+    <div>
+        <label for="">Scan QR CODE To pay:</label>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png"
+            alt="QR CODE" srcset="" id="qrcode">
+    </div>
+</div>

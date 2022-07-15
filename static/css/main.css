@@ -1,0 +1,23 @@
+#logo {
+    width: auto;
+    height: 5em;
+    margin-left: 5em;
+}
+
+.navList {
+    justify-content: safe;
+}
+
+.nav-item {
+    margin-left: 10%;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
